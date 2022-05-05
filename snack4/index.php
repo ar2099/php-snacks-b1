@@ -13,23 +13,27 @@ lo stesso numero più di una volta -->
 
 <?php
  $lista = [];
-$conteggio = 0;
+$unica = [];
+$vuota = [];
 // for($i = 0; $i < 15; $i++){
     
 //    $lista[] = rand(1,100);
 //    echo "<p>$lista[$i]</p>";
 // };
-while($conteggio < 10){
-    $numero = rand(1,13);
-  if(array_search($numero,$lista) == false){
+while(count($unica) < 15){
+    $numero = rand(1,20);
+  
     $lista[] = $numero;
-    $conteggio = $conteggio +1;
-  }
 
+   $unica = array_unique($lista);
     
-}
-var_dump($lista);
-echo count($lista);
+  };
+
+  //Ho fatto questo passaggio per rendere continue le chiavi  
+$stampa1 = array_merge($unica, $vuota);
+echo "Metodo 1 = array-unique";
+var_dump($stampa1);
+echo "----------------------";
 ?>
 <body>
     

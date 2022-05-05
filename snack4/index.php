@@ -13,25 +13,23 @@ lo stesso numero più di una volta -->
 
 <?php
  $lista = [];
- 
+$conteggio = 0;
 // for($i = 0; $i < 15; $i++){
     
 //    $lista[] = rand(1,100);
 //    echo "<p>$lista[$i]</p>";
 // };
-while(count($lista) < 15){
-    
-    for($i = 0; $i <= count($lista); $i++){
-        $numero = rand(1,20);
-        if($numero == $lista[$i]){}
-        else{
-         $lista[] = $numero  ;
-         
- 
-        }
-    }
-}
+while($conteggio < 10){
+    $numero = rand(1,13);
+  if(array_search($numero,$lista) == false){
+    $lista[] = $numero;
+    $conteggio = $conteggio +1;
+  }
 
+    
+}
+var_dump($lista);
+echo count($lista);
 ?>
 <body>
     

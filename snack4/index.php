@@ -33,8 +33,43 @@ while(count($unica) < 15){
 $stampa1 = array_merge($unica, $vuota);
 echo "Metodo 1 = array-unique";
 var_dump($stampa1);
-echo "----------------------";
+echo "----------------------</br>";
 ?>
+
+<?php
+$lista2 = [];
+while(count($lista2) < 15){
+    $numero2 = rand(1,20);
+    if(in_array($numero2, $lista2) == false){ //perchè array_search(value, array) non funziona?
+      $lista2[] = $numero2;
+    };
+    
+  };
+  
+    echo "Metodo 2 - while con in-array";
+      var_dump($lista2);
+      echo "----------------------</br>";
+    
+  
+?>
+<!-- <?php 
+$lista3 = [];
+$lista3[] = rand(1,20);
+while(count($lista3) < 16){
+    $numero3 = rand(1,20);
+    $stato = true;
+    for($i = 0; $i < count($lista3); $i++){
+      if(($numero3 != $lista3[$i]) && ($stato == true) && (count($lista3) == $i)){
+        $lista3[] = $numero3;
+      }
+      elseif($numero3 == $lista3[$i]){
+        $stato = false;
+      }
+    }
+    
+  };
+
+?> -->
 <body>
     
 </body>

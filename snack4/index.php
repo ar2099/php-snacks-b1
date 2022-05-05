@@ -53,21 +53,21 @@ while(count($lista2) < 15){
   
 ?>
 <!-- <?php 
-$lista3 = [];
-$lista3[] = rand(1,20);
-while(count($lista3) < 16){
-    $numero3 = rand(1,20);
-    $stato = true;
-    for($i = 0; $i < count($lista3); $i++){
-      if(($numero3 != $lista3[$i]) && ($stato == true) && (count($lista3) == $i)){
-        $lista3[] = $numero3;
-      }
-      elseif($numero3 == $lista3[$i]){
-        $stato = false;
-      }
-    }
+// $lista3 = [];
+// $lista3[] = rand(1,20);
+// while(count($lista3) < 16){
+//     $numero3 = rand(1,20);
+//     $stato = true;
+//     for($i = 0; $i < count($lista3); $i++){
+//       if(($numero3 != $lista3[$i]) && ($stato == true) && (count($lista3) == $i)){
+//         $lista3[] = $numero3;
+//       }
+//       elseif($numero3 == $lista3[$i]){
+//         $stato = false;
+//       }
+//     }
     
-  };
+//   };
 
 ?> -->
 <body>
